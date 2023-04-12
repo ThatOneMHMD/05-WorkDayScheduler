@@ -1,0 +1,179 @@
+/* styling for body */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+/* for text area where user will input tasks into the schedule */
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+/* specific class, making sure width is good, taking all space provided */
+.container {
+  width: 100%;
+}
+
+/* edited this to create a shadow for the title and overall make it look better */
+.display-3{
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  color: #333;
+  text-shadow: 1px 1px 2px #e51010;
+}
+
+/* for the text area as well-this was given with starter code */
+.description {
+  white-space: pre-wrap;
+}
+
+/* just made the font bold because it looks better this way! */
+.lead, .hour{
+
+  font-weight: bold;
+}
+
+.time-block {
+  border-radius: 15px;
+}
+
+.row {
+  border-top: 1px solid white;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+/* styling for the tasks that are inputed in hours that have past the current timing */
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+/* for current tasks */
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+/* for future tasks */
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+/* for the save btn */
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+/* when hovering over the saveBtn */
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* for 2 newly created btns, one to delete all tasks and the other to save them all */
+#clear-schedule-btn, #saveAllBtn {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #f44336;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* like above but for hovering */
+#clear-schedule-btn, #saveAllBtn :hover {
+  background-color: #d32f2f;
+}
+
+/* applies these changes when screen size is adjusted to the mentioned size (768px)*/
+@media (max-width: 768px) {
+
+  .time-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+  }
+
+  .hour {
+    margin-bottom: 10px;
+  }
+
+  .description {
+    width: 100%;
+    margin-bottom: 10px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+
+  .saveBtn {
+    margin-top: 10px;
+    border: none;
+  }
+}
+
+/* applies these changes when screen size is adjusted */
+@media (max-width: 420px) {
+
+  .time-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    font-size: smaller;
+    text-align: center;
+  }
+
+  .hour {
+    margin-bottom: 10px;
+    font-size: smaller;
+    width: 50%;
+  }
+
+  .description {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: smaller;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+  
+  .saveBtn {
+    margin-top: 10px;
+    font-size: smaller;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+  }
+
+  #clear-schedule-btn, #saveAllBtn {
+    font-size: smaller;
+  }
+  
+}
+
