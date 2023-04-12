@@ -2,7 +2,7 @@
 
 ## LIVE URL (yet to be completed)
 
-https://thatonemhmd.github.io/03-PasswordGenerator/
+https://thatonemhmd.github.io/05-WorkDayScheduler/
 
 ## Description
 
