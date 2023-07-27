@@ -1,6 +1,6 @@
 # WorkDayScheduler
 
-## LIVE URL (yet to be completed)
+## LIVE URL
 
 https://thatonemhmd.github.io/05-WorkDayScheduler/
 
